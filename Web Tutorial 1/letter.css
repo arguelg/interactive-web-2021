@@ -1,0 +1,15 @@
+div {
+	width: 50px;
+	height: 50px;
+	background:  white;
+	border: 1px solid red;
+
+}
+
+body {
+	background: black;
+}
+
+.red-div{
+	background: red;
+}

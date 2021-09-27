@@ -1,0 +1,116 @@
+body {
+	margin: 0;
+}
+
+.letter-h,
+.letter-a,
+.letter-l,
+.letter-u,
+.letter-e {
+	position: relative;
+	width: 120px;
+	height: 450px;
+	border: 0px solid black;
+	display: inline-block;
+}
+
+.h-base,
+.a-base,
+.u-base,
+.e-base {
+	width: 95px;
+	height: 405px;
+	background: black;
+	position: absolute;
+	left: 0;
+}
+
+.h-top {
+	width: 60px;
+	height: 175px;
+	background: white;
+	position: absolute;
+	left: 17px;
+	top: -40px;
+	border-radius: 100px;
+}
+
+.h-bottom {
+	width: 60px;
+	height: 230px;
+	background: white;
+	position: absolute;
+	left: 18px;
+	top: 205px;
+	border-radius: 100px;
+}
+
+.a-top {
+	width: 40px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    left: 28px;
+    top: 35px;
+    border-radius: 100px;
+}
+
+.a-bottom {
+	width: 60px;
+	height: 230px;
+	background: white;
+	position: absolute;
+	left: 18px;
+	top: 205px;
+	border-radius: 100px;
+}
+
+
+.l-base {
+	width: 105px;
+	height: 405px;
+	background: black;
+	position: absolute;
+	left: 0;
+
+}
+
+.l-cutout {
+	width: 90px;
+	height: 470px;
+	background: white;
+	position: absolute;
+	left: 22px;
+	top: -100px;
+	border-radius: 100px;
+}
+
+.u-cutout {
+	width: 23px;
+	height: 230px;
+	background: white;
+	position: absolute;
+	left: 20px;
+	top: -55px;
+	border-radius: 100px;
+}
+
+.e-top {
+	width: 80px;
+	height: 55px;
+	background: white;
+	position: absolute;
+	left: 40px;
+	top: 60px;
+	border-radius: 100px;
+}
+
+.e-bottom {
+	width: 120px;
+	height: 75px;
+	background: white;
+	position: absolute;
+	left: 25px;
+	top: 160px;
+	border-radius: 100px;
+}

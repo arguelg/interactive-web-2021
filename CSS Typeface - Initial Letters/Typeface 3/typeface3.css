@@ -1,0 +1,184 @@
+/*
+ 
+STROKE WIDTH: 215px;
+AVERAGE LETTER HEIGHT: 260px;
+
+
+*/
+
+body {
+	margin: 0;
+}
+
+.letter-c,
+.letter-e,
+.letter-a,
+.letter-d {
+	position: relative;
+	width: 250px;
+	height: 200px;
+	border: 0px solid black;
+	display: inline-block;
+}
+
+.c-base,
+.d-base {
+	width: 215px;
+	height: 260px;
+	background: black;
+	position: absolute;
+	left: 0;
+}
+
+.c-cutout {
+	width: 100px;
+	height: 4px;
+	background: white;
+	position: absolute;
+	left: 120px;
+	top: 120px;
+	border-radius: 100px;
+
+}
+
+.c-triangle-top {
+	width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 35px solid white;
+    border-right: 35px solid transparent;
+
+}
+
+.c-triangle-bottom {
+	width: 0;
+    height: 0;
+    position: absolute;
+    top: 225px;
+    left: 0;
+    border-bottom: 35px solid white;
+    border-right: 35px solid transparent;
+   
+}
+
+
+.e-base,
+.a-base {
+	width: 215px;
+	height: 260px;
+	background: black;
+	position: absolute;
+	left: 0;
+}
+
+
+.e-cutout-top{
+	width: 100px;
+	height: 4px;
+	background: white;
+	position: absolute;
+	left: 140px;
+	top: 92px;
+	border-radius: 100px;
+
+}
+
+.e-cutout-bottom{
+	width: 100px;
+	height: 4px;
+	background: white;
+	position: absolute;
+	left: 140px;
+	top: 152px;
+	border-radius: 100px;
+
+}
+
+.e-cutout-circle{
+	width: 63px;
+    height: 63px;
+    background: white;
+    position: absolute;
+    left: -25px;
+    top: 90px;
+    border-radius: 0px 100px 100px 100px;
+}
+
+.a-cutout-top{
+	width: 4px;
+	height: 50px;
+	background: white;
+	position: absolute;
+	left: 105px;
+	top: 40px;
+	border-radius: 100px;
+}
+
+.a-cutout-bottom{
+	width: 4px;
+	height: 90px;
+	background: white;
+	position: absolute;
+	left: 105px;
+	top: 175px;
+	border-radius: 100px;
+}
+.a-triangle-left{
+	width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 50px solid white;
+    border-right: 50px solid transparent;
+
+}
+.a-triangle-right{
+	width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    left: 165px;
+    border-top: 50px solid white;
+    border-left: 50px solid transparent;
+
+}
+
+.d-cutout{
+	width: 175px;
+	height: 4px;
+	background: white;
+	position: absolute;
+	left: 20px;
+	top: 130px;
+	border-radius: 100px;
+	transform: rotate(120deg);
+
+}
+
+.d-triangle-top{
+	width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0px;
+    left: 175px;
+    border-top: 40px solid white;
+    border-left: 40px solid transparent;
+
+}
+
+.d-triangle-bottom{
+	width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 220px;
+    left: 175px;
+    border-bottom: 40px solid white;
+    border-left: 40px solid transparent;
+
+}
+
+
+}

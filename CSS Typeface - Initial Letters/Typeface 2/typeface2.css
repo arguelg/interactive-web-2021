@@ -1,0 +1,152 @@
+/*
+ 
+STROKE WIDTH: 115px;
+AVERAGE LETTER HEIGHT: 480px;
+
+
+*/
+
+
+body {
+	margin: 0;
+}
+
+.letter-m,
+.letter-a,
+.letter-l,
+.letter-t {
+	position: relative;
+	width: 120px;
+	height: 500px;
+	border: 1px solid black;
+	display: inline-block;
+}
+
+.m-base {
+	width: 115px;
+	height: 480px;
+	background: black;
+	position: absolute;
+	left: 0;
+}
+
+.m-top{
+	width: 5px;
+	height: 100px;
+	background: white;
+	position: absolute;
+	left: 57px;
+	top: -20px;
+	border-radius: 100px;
+
+}
+
+.m-foot-first {
+	width: 5px;
+	height: 345px;
+	background: white;
+	position: absolute;
+	left: 38px;
+	top: 140px;
+	border-radius: 100px;
+}
+
+.m-foot-second {
+	width: 5px;
+	height: 345px;
+	background: white;
+	position: absolute;
+	left: 76px;
+	top: 140px;
+	border-radius: 100px;
+}
+
+.a-base{
+	width: 86px;
+	height: 480px;
+	background: black;
+	position: absolute;
+	left: 0;
+
+}
+
+.a-top{
+	width: 5px;
+	height: 80px;
+	background: white;
+	position: absolute;
+	left: 43px;
+	top: 20px;
+	border-radius: 100px;
+
+}
+
+.a-top-square{
+	width: 5px;
+	height: 80px;
+	background: white;
+	position: absolute;
+	left: 43px;
+	top: 25px;
+
+}
+
+.a-bottom{
+	width: 5px;
+	height: 345px;
+	background: white;
+	position: absolute;
+	left: 43px;
+	top: 140px;
+	border-radius: 100px;
+
+}
+
+.l-stem{
+	width: 40px;
+	height: 480px;
+	background: black;
+	position: absolute;
+	left: -30px;
+
+}
+
+.l-foot{
+	width: 80px;
+	height: 40px;
+	background: black;
+	position: absolute;
+	left: -30px;
+	top: 440px;
+
+}
+
+.l-cutout {
+	width: 5px;
+	height: 345px;
+	background: white;
+	position: absolute;
+	left: 10px;
+	top: 110px;
+	border-radius: 100px;
+}
+
+.t-stem{
+	width: 40px;
+	height: 480px;
+	background: black;
+	position: absolute;
+	left: 65px;
+
+}
+
+.t-bar{
+	width: 85px;
+	height: 40px;
+	background: black;
+	position: absolute;
+	left: 42px;
+	top: 0px;
+
+}
+
