@@ -1,0 +1,22 @@
+
+        .header {
+            height: 15vh;
+            border-bottom: 1px solid #000;
+            border-left: 1px solid #000;
+        }
+
+        .speakers{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            height: 90vh;
+        }
+
+        .speaker{
+            height: 90vh;
+            border-left: 1px solid #000;
+            overflow-y: scroll;
+        }
+
+        .mindy{
+            transform: scale(0.5);
+        }
