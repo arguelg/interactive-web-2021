@@ -1,4 +1,10 @@
 
+:root{
+        --main-bg-color: rgb(255, 125, 21);
+     }
+
+
+
 .letter{
 
         width: 46px; /*resize as you see fit */
@@ -56,7 +62,7 @@
 .a-top{
         width: 5px;
         height: 80px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: 20px;
@@ -67,7 +73,7 @@
 .a-top-square{
         width: 5px;
         height: 80px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: 25px;
@@ -77,7 +83,7 @@
 .a-bottom{
         width: 5px;
         height: 345px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: 140px;
@@ -176,7 +182,7 @@
 .r-cutout-top{
         width: 5px;
         height: 105px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: 43px;
@@ -187,7 +193,7 @@
 .b-cutout-bottom{
         width: 5px;
         height: 215px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: 226px;
@@ -254,7 +260,7 @@
 .q-cutout-vertical{
         width: 5px;
         height: 392px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: 43px;
@@ -265,7 +271,7 @@
 .c-cutout-horizontal{
         width: 105px;
         height: 6px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: 215px;
@@ -278,7 +284,7 @@
 .g-cutout-vertical-top{
         width: 6px;
         height: 138px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: 28px;
@@ -291,7 +297,7 @@
 .g-cutout-horizontal-top{
         width: 60px;
         height: 6px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: 162px;
@@ -303,7 +309,7 @@
 .f-cutout-square{
         width: 24px;
         height: 46px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 65px;
         top: 166px;
@@ -313,7 +319,7 @@
 .f-cutout-horizontal-bottom{
         width: 60px;
         height: 6px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: 210px;
@@ -325,7 +331,7 @@
 .f-cutout-vertical-bottom{
         width: 6px;
         height: 213px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: 210px;
@@ -345,7 +351,7 @@
 .f-main-cutout{
         width: 52px;
         height: 265px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: 215px;
@@ -355,7 +361,7 @@
 .g-cutout-vertical{
         width: 6px;
         height: 263px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: 160px;
@@ -375,7 +381,7 @@
 .h-top{
         width: 5px;
         height: 120px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: -2px;
@@ -386,7 +392,7 @@
 .h-bottom{
         width: 5px;
         height: 320px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: 165px;
@@ -409,7 +415,7 @@
 .j-cutout{
         width: 5px;
         height: 213px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 38px;
         top: 210px;
@@ -430,7 +436,7 @@
 .j-cutout-rectangle{
         width: 43px;
         height: 220px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 0px;
         top: 0px;
@@ -462,7 +468,7 @@
 .y-cutout-top{
         width: 5px;
         height: 142px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: -2px;
@@ -474,7 +480,7 @@
 .x-cutout-bottom{
         width: 5px;
         height: 257px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: 226px;
@@ -505,7 +511,7 @@
 .m-top{
         width: 5px;
         height: 70px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 55px;
         top: -2px;
@@ -538,7 +544,7 @@
 .m-cutout-bottom-one{
         width: 5px;
         height: 320px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 36px;
         top: 165px;
@@ -548,7 +554,7 @@
 .m-cutout-bottom-two{
         width: 5px;
         height: 320px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 73px;
         top: 165px;
@@ -579,7 +585,7 @@
 .n-cutout-vertical{
         width: 5px;
         height: 441px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: 43px;
@@ -611,7 +617,7 @@
 .p-cutout-vertical{
         width: 5px;
         height: 370px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: 43px;
@@ -680,7 +686,7 @@
 .s-cutout-vertical-top{
         width: 6px;
         height: 90px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 42px;
         top: 32px;
@@ -691,7 +697,7 @@
 .s-cutout-horizontal-top{
         width: 60px;
         height: 6px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: 116px;
@@ -723,7 +729,7 @@
 .y-cutout-horizontal-bottom{
         width: 51px;
         height: 6px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: -3px;
         top: 166px;
@@ -735,7 +741,7 @@
 .y-cutout-vertical-bottom{
         width: 6px;
         height: 268px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: 166px;
@@ -765,7 +771,7 @@
 .u-cutout-vertical{
         width: 5px;
         height: 436px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: -2px;
@@ -776,7 +782,7 @@
 .v-cutout-vertical{
         width: 5px;
         height: 436px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 43px;
         top: -2px;
@@ -787,7 +793,7 @@
 .w-bottom{
         width: 5px;
         height: 70px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 55px;
         top: 412px;
@@ -798,7 +804,7 @@
 .w-cutout-top-one{
         width: 5px;
         height: 320px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 36px;
         top: -2px;
@@ -808,7 +814,7 @@
 .w-cutout-top-two{
         width: 5px;
         height: 320px;
-        background: white;
+        background: var(--main-bg-color);
         position: absolute;
         left: 73px;
         top: -2px;
