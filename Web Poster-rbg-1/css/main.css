@@ -34,6 +34,9 @@
             background-color: rgb(255, 125, 21);
             font-family: Migra;
             transition: 0.4s;
+            font-family: Migra;
+            font-size: 19px;
+
         }
 
         body.red{
@@ -301,7 +304,7 @@
 /* KELLY WALTERS */
 
         .kelly-walters {
-            width: 334px;
+            width: 338px;
             height: 320px;
             margin: auto;
             transition: transform 0.2s;
