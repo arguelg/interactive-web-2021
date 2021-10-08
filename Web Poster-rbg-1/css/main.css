@@ -1,0 +1,399 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face{
+            font-family: 'Migra';
+            src: url("../fonts/Migra-Regular.woff") format('woff');
+            font-style: normal;
+        }
+
+        p{
+            padding: 5px;
+            margin: auto;  
+
+        }
+
+        h1{
+            font-family: Migra;
+            font-weight: normal;
+            font-size: 2rem;
+            height: 100%;
+            border-right: 1px solid;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-right: 0.5rem;
+            padding-left: 1.5rem;
+
+            display: flex;
+            align-items: center;
+        }
+
+        body{
+            background-color: rgb(255, 125, 21);
+            font-family: Migra;
+            transition: 0.4s;
+        }
+
+        body.red{
+            background-color: rgb(255, 58, 23);
+            transition: 0.4s;
+        }
+
+        body.green{
+            background-color: rgb(0, 191, 76);
+            transition: 0.4s;
+        }
+
+        body.blue{
+            background-color: rgb(42, 105, 255);
+            transition: 0.4s;
+        }
+
+        .color {
+        
+           margin: auto;
+        }
+
+        .header {
+            height: 14vh;
+            border-bottom: 1px solid #000;
+            border-left: 1px solid #000;
+            display: grid;
+            grid-template-columns: 5fr 3fr
+        }
+
+        .speakers {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            height: 86vh;
+            border-left: 1px solid #000;
+        }
+
+        .speaker {
+            height: 86vh;
+            border-left: 1px solid #000;
+            overflow-y: scroll;
+
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .speaker::-webkit-scrollbar {
+          display: none;
+        }
+
+/* MINDY SEU */
+
+        .mindy-seu-info {
+            font-family: Migra;
+            position: relative;
+            padding: 10px;
+            margin-top: 1rem;
+
+
+        }
+
+        .mindy-seu {
+            width: 240px;
+            height: 320px;
+            margin: auto;
+            transition: transform 0.2s;
+            transform: scale(0.75);
+        }
+
+        .mindy-seu:hover{
+            transform: skew(-10deg) scale(0.75);
+            cursor: pointer;
+        }
+
+        }
+
+        .mindy {
+            padding: 2px;
+
+        }
+
+        .seu {
+            padding: 2px;
+            margin-left: 2.2rem;
+            margin-top: 5rem;
+
+        }
+
+    /*
+        .color-button-orange{
+            background: rgb(255, 125, 21);
+        }
+
+        .color-button-orange:hover{
+            background: rgb(255, 125, 21);
+            color: black;
+        }
+
+        .color-button-green{
+            background: rgb(0, 191, 76);
+        }
+
+        .color-button-green:hover{
+            background: rgb(0, 191, 76);
+            color: black;
+        }
+
+        .color-button-blue{
+            background: rgb(42, 105, 255);
+        }
+
+         .color-button-blue:hover{
+            background: rgb(0, 191, 76);
+            color: black;
+        }
+    */
+
+        button {
+            border: 1px solid #000;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 16px;
+            padding-right: 16px;
+            background: transparent;
+
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-family: Migra;
+            font-size: 28px;
+            border-radius: 40px;
+
+            margin-left: 1rem;
+            margin-top: 0.25rem;
+            margin-right: -1rem;
+            margin-bottom: 0.25rem;
+            transition: 0.2;
+            cursor: pointer;
+
+        /* margin:  0.5rem 0 0.5 rem 1rem; */
+            
+        }
+
+        button:hover{
+            background: black;
+            color: rgb(255, 125, 21);
+        }
+
+        /*.green button{
+            border-color: black;
+            color: black;
+            background-color: rgb(255, 125, 21);
+        }
+        .green button{
+            border-color: black;
+            color: black;
+            background-color: transparent;
+        }*/
+
+        .green button{
+            border-color: black;
+            color: black;
+            background-color: transparent;
+        }
+
+         .green button:hover{
+            background: black;
+            color: rgb(0, 191, 76);
+        }
+
+        /*.blue button{
+            border-color: black;
+            color: black;
+            background-color: rgb(255, 125, 21);
+        }
+        .blue button{
+            border-color: black;
+            color: black;
+            background-color: transparent;
+        }*/
+
+        .blue button{
+            border-color: black;
+            color: black;
+            background-color: transparent;
+        }
+
+         .blue button:hover{
+            background: black;
+            color: rgb(42, 105, 255);
+        }
+
+        .red button{
+            border-color: black;
+            color: black;
+            background-color: transparent;
+        }
+
+         .red button:hover{
+            background: black;
+            color: rgb(255, 58, 23);
+        }
+
+        .circle-mindy-seu{
+            width: 360px;
+            height: 128px;
+            border: 1px solid #000;
+            transform: rotate(-53deg);
+            position: relative;
+            top: -145px;
+            left: -20px;
+            border-radius: 200px / 80px;
+        }
+
+/* DANIELLE AUBERT */
+
+        .danielle-aubert {
+            width: 360px;
+            height: 320px;
+            margin-left: -1rem;
+            transition: transform 0.2s;
+            transform: scale(0.65);
+        }
+
+        .danielle-aubert:hover{
+            transform: skew(-10deg) scale(0.65);
+            cursor: pointer;
+        }
+
+        }
+
+        .danielle {
+            margin-left: 2rem;
+
+        }
+
+        .aubert {
+            padding: 2px;
+            margin-left: 2.2rem;
+            margin-top: 5rem;
+
+        }
+
+         .danielle-aubert-info {
+            font-family: Migra;
+            position: relative;
+            padding: 10px;
+            margin-top: 1rem;
+
+
+        }
+
+        .circle-danielle-aubert{
+            width: 360px;
+            height: 128px;
+            border: 1px solid #000;
+            transform: rotate(-53deg);
+            position: relative;
+            top: -145px;
+            left: -20px;
+            border-radius: 200px / 80px;        
+
+        }
+
+/* KELLY WALTERS */
+
+        .kelly-walters {
+            width: 334px;
+            height: 320px;
+            margin: auto;
+            transition: transform 0.2s;
+            transform: scale(0.7);
+        }
+
+        .kelly-walters:hover{
+            transform: skew(-10deg) scale(0.7);
+            cursor: pointer;
+        }
+
+        .kelly {
+            margin-left: 2.5rem;
+
+        }
+
+        .walters {
+            padding: 2px;
+            margin-left: 0rem;
+            margin-top: 5rem;
+
+        }
+
+         .kelly-walters-info {
+            font-family: Migra;
+            position: relative;
+            padding: 10px;
+            margin-top: 1rem;
+
+        }
+
+        .circle-kelly-walters {
+            width: 360px;
+            height: 128px;
+            border: 1px solid #000;
+            transform: rotate(-53deg);
+            position: relative;
+            top: -145px;
+            left: -20px;
+            border-radius: 200px / 80px;
+        }
+
+/* CEM ESKINAZI */
+
+        .cem-eskinazi {
+            width: 360px;
+            height: 320px;
+            margin: auto;
+            transition: transform 0.2s;
+            transform: scale(0.65);
+        }
+
+        .cem-eskinazi:hover{
+            transform: skew(-10deg) scale(0.65);
+            cursor: pointer;
+        }
+
+        .cem {
+            margin-left: 5.5rem;
+
+        }
+
+        .eskinazi {
+            padding: 2px;
+            margin-left: 0rem;
+            margin-top: 5rem;
+
+        }
+
+         .cem-eskinazi-info {
+            font-family: Migra;
+            position: relative;
+            padding: 10px;
+            margin-top: 1rem;
+
+        }
+
+        .circle-cem-eskinazi {
+            width: 360px;
+            height: 128px;
+            border: 1px solid #000;
+            transform: rotate(-53deg);
+            position: relative;
+            top: -145px;
+            left: -20px;
+            border-radius: 200px / 80px;
+
+        }
+
+
+
+
