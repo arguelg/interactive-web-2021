@@ -20,12 +20,10 @@
         h1{
             font-family: Migra;
             font-weight: normal;
-            font-size: 2rem;
+            font-size: 2.45rem;
             height: 100%;
             border-right: 1px solid;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            padding-right: 0.5rem;
+            padding-top: 0.5rem;
             padding-left: 1.5rem;
 
             display: flex;
@@ -59,22 +57,22 @@
         }
 
         .header {
-            height: 14vh;
+            height: 11vh;
             border-bottom: 1px solid #000;
             border-left: 1px solid #000;
             display: grid;
-            grid-template-columns: 5fr 3fr
+            grid-template-columns: 5fr 3fr;
+            overflow-y: scroll;
         }
 
         .speakers {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            height: 86vh;
-            border-left: 1px solid #000;
+            height: 89vh;
         }
 
         .speaker {
-            height: 86vh;
+            height: 89vh;
             border-left: 1px solid #000;
             overflow-y: scroll;
 
@@ -87,6 +85,10 @@
           display: none;
         }
 
+        .speaker: last-child{
+            border-right: 1px solid #000;
+        }
+
 /* MINDY SEU */
 
         .mindy-seu-info {
@@ -94,7 +96,6 @@
             position: relative;
             padding: 10px;
             margin-top: 1rem;
-
 
         }
 
@@ -109,13 +110,6 @@
         .mindy-seu:hover{
             transform: skew(-10deg) scale(0.75);
             cursor: pointer;
-        }
-
-        }
-
-        .mindy {
-            padding: 2px;
-
         }
 
         .seu {
@@ -241,14 +235,16 @@
         }
 
         .circle-mindy-seu{
-            width: 360px;
-            height: 128px;
+            width: 355px;
+            height: 140px;
             border: 1px solid #000;
-            transform: rotate(-53deg);
-            position: relative;
-            top: -145px;
-            left: -20px;
+            transform: rotate(-58deg);
             border-radius: 200px / 80px;
+
+            margin: auto;
+            position: relative;
+            top: -155px;
+            left: -5px;
         }
 
 /* DANIELLE AUBERT */
@@ -256,7 +252,7 @@
         .danielle-aubert {
             width: 360px;
             height: 320px;
-            margin-left: -1rem;
+            margin: auto;
             transition: transform 0.2s;
             transform: scale(0.65);
         }
@@ -266,15 +262,7 @@
             cursor: pointer;
         }
 
-        }
-
-        .danielle {
-            margin-left: 2rem;
-
-        }
-
         .aubert {
-            padding: 2px;
             margin-left: 2.2rem;
             margin-top: 5rem;
 
@@ -286,18 +274,19 @@
             padding: 10px;
             margin-top: 1rem;
 
-
         }
 
         .circle-danielle-aubert{
-            width: 360px;
-            height: 128px;
+            width: 355px;
+            height: 140px;
             border: 1px solid #000;
-            transform: rotate(-53deg);
+            transform: rotate(-58deg);
+            border-radius: 200px / 80px;
+
+            margin: auto;
             position: relative;
-            top: -145px;
-            left: -20px;
-            border-radius: 200px / 80px;        
+            top: -155px;
+            left: -5px;
 
         }
 
@@ -309,11 +298,13 @@
             margin: auto;
             transition: transform 0.2s;
             transform: scale(0.7);
+
         }
 
         .kelly-walters:hover{
             transform: skew(-10deg) scale(0.7);
             cursor: pointer;
+
         }
 
         .kelly {
@@ -323,7 +314,6 @@
 
         .walters {
             padding: 2px;
-            margin-left: 0rem;
             margin-top: 5rem;
 
         }
@@ -337,14 +327,16 @@
         }
 
         .circle-kelly-walters {
-            width: 360px;
-            height: 128px;
+            width: 355px;
+            height: 140px;
             border: 1px solid #000;
-            transform: rotate(-53deg);
-            position: relative;
-            top: -145px;
-            left: -20px;
+            transform: rotate(-58deg);
             border-radius: 200px / 80px;
+
+            margin: auto;
+            position: relative;
+            top: -155px;
+            left: -5px;
         }
 
 /* CEM ESKINAZI */
@@ -354,11 +346,11 @@
             height: 320px;
             margin: auto;
             transition: transform 0.2s;
-            transform: scale(0.65);
+            transform: scale(0.7);
         }
 
         .cem-eskinazi:hover{
-            transform: skew(-10deg) scale(0.65);
+            transform: skew(-10deg) scale(0.7);
             cursor: pointer;
         }
 
@@ -383,14 +375,17 @@
         }
 
         .circle-cem-eskinazi {
-            width: 360px;
-            height: 128px;
+            width: 355px;
+            height: 140px;
             border: 1px solid #000;
-            transform: rotate(-53deg);
-            position: relative;
-            top: -145px;
-            left: -20px;
+            transform: rotate(-58deg);
             border-radius: 200px / 80px;
+
+            margin: auto;
+            position: relative;
+            top: -155px;
+            left: -5px;
+
 
         }
 
