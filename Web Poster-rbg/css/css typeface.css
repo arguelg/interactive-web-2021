@@ -1,0 +1,897 @@
+
+body {
+        --main-bg-color: rgb(255, 125, 21);
+        transition: 0.4s
+     }
+
+body.green{
+        --main-bg-color: rgb(0, 191, 76);
+        transition: 0.4s
+}
+
+body.blue{
+        --main-bg-color: rgb(42, 105, 255);
+        transition: 0.4s
+}
+
+body.red{
+        --main-bg-color: rgb(255, 58, 23);
+        transition: 0.4s
+}
+
+.letter{
+
+        width: 46px; /*resize as you see fit */
+        height: 160px;/*resize as you see fit */
+        display: inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
+        border: 0px solid #000; /*feel free to remove or hide this rule */
+        position: relative; /* IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element; */
+        transform-origin: 0 0;
+        transform: scale(0.5);
+       /* transform-origin: 0 0;
+        transform: scale(0.8); */
+
+}
+
+.letter-i{
+        width: 20px;
+}
+
+.letter-g,
+.letter-q{
+        width: 108px;
+}
+
+.letter-t{
+        width: 30px;
+}
+
+.letter-s{
+        width: 45px;
+}
+
+.letter-n{
+        width: 44px;
+}
+
+.letter-m,
+.letter-w{
+        width: 55px;
+}
+
+.letter-l{
+        width: 43px;
+}
+
+.letter-r{
+        width: 45px;
+}
+
+.letter-y{
+        width: 35px;
+}
+
+.a-base{
+        width: 86px;
+        height: 480px;
+        background: black;
+        position: absolute;
+        left: 0;
+}
+
+.h-base{
+
+        width: 86px;
+        height: 480px;
+        background: black;
+        position: absolute;
+        left: 0;
+}
+.v-base{ 
+        width: 86px;
+        height: 480px;
+        background: black;
+        position: absolute;
+        left: 0;
+
+}
+
+.a-top{
+        width: 5px;
+        height: 80px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: 20px;
+        border-radius: 100px;
+
+}
+
+.a-top-square{
+        width: 5px;
+        height: 80px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: 25px;
+
+}
+
+.a-bottom{
+        width: 5px;
+        height: 345px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: 140px;
+        border-radius: 100px;
+
+}
+
+.b-base-top{
+        width: 86px;
+        height: 148px;
+        background: black;
+        position: absolute;
+        left: 0;
+        top: 22px;
+
+}
+
+.b-base-bottom{
+        width: 86px;
+        height: 235px;
+        background: black;
+        position: absolute;
+        left: 0;
+        top: 216px;
+
+}
+
+.b-round-first,
+.r-round-first,
+.s-round-first{
+        width: 86px;
+        height: 44px;
+        background: black;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        border-radius: 15px;
+
+}
+
+.b-round-second,
+.k-round-second,
+.r-round-second,
+.x-round-second{
+        width: 86px;
+        height: 44px;
+        background: black;
+        position: absolute;
+        left: 0px;
+        top: 150px;
+        border-radius: 50px;
+
+}
+
+.b-round-third,
+.k-round-third,
+.r-round-third,
+.x-round-third{
+        width: 86px;
+        height: 44px;
+        background: black;
+        position: absolute;
+        left: 0px;
+        top: 192px;
+        border-radius: 50px;
+
+}
+
+.b-round-fourth,
+.s-round-third,
+.y-round-fourth{
+        width: 86px;
+        height: 44px;
+        background: black;
+        position: absolute;
+        left: 0px;
+        top: 436px;
+        border-radius: 15px;
+
+}
+
+.b-rectangle-vertical,
+.d-rectangle-vertical,
+.k-rectangle-vertical,
+.n-rectangle-vertical,
+.r-rectangle-vertical{
+        width: 23px;
+        height: 480px;
+        background: black;
+        position: absolute;
+        left: 0;
+        top: 0px;
+}
+
+.b-cutout-top,
+.r-cutout-top{
+        width: 5px;
+        height: 105px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: 43px;
+        border-radius: 100px;
+
+}
+
+.b-cutout-bottom{
+        width: 5px;
+        height: 215px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: 226px;
+        border-radius: 100px;
+
+}
+
+.c-base,
+.d-base,
+.e-base,
+.f-base,
+.g-base,
+.j-base,
+.o-base,
+.q-base{
+        width: 86px;
+        height: 430px;
+        background: black;
+        position: absolute;
+        left: 0;
+        top: 21px;
+
+}
+
+.c-round-top,
+.d-round-top,
+.e-round-top,
+.f-round-top,
+.g-round-top,
+.o-round-top,
+.p-round-top,
+.q-round-top{
+        width: 86px;
+        height: 44px;
+        background: black;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        border-radius: 15px;
+
+}
+
+.c-round-bottom,
+.d-round-bottom,
+.e-round-bottom,
+.f-round-bottom,
+.g-round-bottom,
+.j-round-bottom,
+.o-round-bottom,
+.q-round-bottom,
+.u-round-bottom{
+        width: 86px;
+        height: 44px;
+        background: black;
+        position: absolute;
+        left: 0px;
+        top: 436px;
+        border-radius: 15px;
+}
+
+.c-cutout-vertical,
+.d-cutout-vertical,
+.o-cutout-vertical,
+.q-cutout-vertical{
+        width: 5px;
+        height: 392px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: 43px;
+        border-radius: 100px 100px;
+
+}
+
+.c-cutout-horizontal{
+        width: 105px;
+        height: 6px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: 215px;
+        border-radius: 100px;
+
+}
+
+.e-cutout-vertical-top,
+.f-cutout-vertical-top,
+.g-cutout-vertical-top{
+        width: 6px;
+        height: 138px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: 28px;
+        border-radius: 100px 100px;
+
+}
+
+.e-cutout-horizontal-top,
+.f-cutout-horizontal-top,
+.g-cutout-horizontal-top{
+        width: 60px;
+        height: 6px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: 162px;
+        border-radius: 100px;
+
+}
+
+.e-cutout-square,
+.f-cutout-square{
+        width: 24px;
+        height: 46px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 65px;
+        top: 166px;
+}
+
+.e-cutout-horizontal-bottom,
+.f-cutout-horizontal-bottom{
+        width: 60px;
+        height: 6px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: 210px;
+        border-radius: 100px;
+
+}
+
+.e-cutout-vertical-bottom,
+.f-cutout-vertical-bottom{
+        width: 6px;
+        height: 213px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: 210px;
+        border-radius: 100px;
+
+}
+
+.f-rectangle-vertical-bottom{
+        width: 23px;
+        height: 50px;
+        background: black;
+        position: absolute;
+        left: 0;
+        top: 430px;
+}
+
+.f-main-cutout{
+        width: 52px;
+        height: 265px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: 215px;
+
+}
+
+.g-cutout-vertical{
+        width: 6px;
+        height: 263px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: 160px;
+        border-radius: 100px;
+
+}
+
+.g-bar{
+        width: 50px;
+        height: 38px;
+        background: black;
+        position: absolute;
+        left: 55px;
+        top: 168px;
+}
+
+.h-top{
+        width: 5px;
+        height: 120px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: -2px;
+        border-radius: 100px;
+
+}
+
+.h-bottom{
+        width: 5px;
+        height: 320px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: 165px;
+        border-radius: 100px;
+
+}
+
+.i-base,
+.l-base,
+.t-base{
+        width: 40px;
+        height: 480px;
+        background: black;
+        position: absolute;
+        left: 0;
+        top: 0px;
+
+}
+
+.j-cutout{
+        width: 5px;
+        height: 213px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 38px;
+        top: 210px;
+        border-radius: 100px;
+
+}
+
+.j-base{
+        width: 86px;
+        height: 455px;
+        background: black;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+}
+
+.j-cutout-rectangle{
+        width: 43px;
+        height: 220px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+}
+
+.k-base-top,
+.x-base-top{
+        width: 86px;
+        height: 170px;
+        background: black;
+        position: absolute;
+        left: 0;
+        top: 0;
+}
+
+.k-base-bottom,
+.r-base-bottom,
+.x-base-bottom{
+        width: 86px;
+        height: 264px;
+        background: black;
+        position: absolute;
+        left: 0;
+        top: 216px;
+}
+
+.k-cutout-top,
+.x-cutout-top,
+.y-cutout-top{
+        width: 5px;
+        height: 142px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: -2px;
+        border-radius: 100px;
+}
+
+.k-cutout-bottom,
+.r-cutout-bottom,
+.x-cutout-bottom{
+        width: 5px;
+        height: 257px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: 226px;
+        border-radius: 100px;
+
+}
+
+.l-bar,
+.z-bar-bottom{
+        width: 86px;
+        height: 38px;
+        background: black;
+        position: absolute;
+        left: 0px;
+        top: 442px;
+}
+
+.m-base,
+.w-base{
+        width: 110px;
+        height: 480px;
+        background: black;
+        position: absolute;
+        left: 0;
+        
+}
+
+.m-top{
+        width: 5px;
+        height: 70px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 55px;
+        top: -2px;
+        border-radius: 100px;
+
+}
+
+.m-round-one{
+        width: 54px;
+        height: 44px;
+        background: black;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        border-radius: 15px;
+
+}
+
+.m-round-two{
+        width: 54px;
+        height: 44px;
+        background: black;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        border-radius: 15px;
+
+}
+
+.m-cutout-bottom-one{
+        width: 5px;
+        height: 320px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 36px;
+        top: 165px;
+        border-radius: 100px
+}
+
+.m-cutout-bottom-two{
+        width: 5px;
+        height: 320px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 73px;
+        top: 165px;
+        border-radius: 100px
+}
+
+.n-base{
+        width: 86px;
+        height: 445px;
+        background: black;
+        position: absolute;
+        left: 0;
+        top:35px;
+
+}
+
+.n-round-top{
+        width: 86px;
+        height: 44px;
+        background: black;
+        position: absolute;
+        left: 0px;
+        top: 10px;
+        border-radius: 15px;
+
+}
+
+.n-cutout-vertical{
+        width: 5px;
+        height: 441px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: 43px;
+        border-radius: 100px;
+
+
+}
+
+.p-base{
+        width: 86px;
+        height: 415px;
+        background: black;
+        position: absolute;
+        left: 0;
+        top: 21px;
+
+}
+
+.p-round-bottom{
+        width: 86px;
+        height: 44px;
+        background: black;
+        position: absolute;
+        left: 0px;
+        top: 407px;
+        border-radius: 15px;
+}
+
+.p-cutout-vertical{
+        width: 5px;
+        height: 370px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: 43px;
+        border-radius: 100px 100px;
+
+}
+
+.p-stem{
+        width: 40px;
+        height: 480px;
+        background: black;
+        position: absolute;
+        left: 0;
+        top: 0px;
+}
+
+.q-bar{
+        width: 50px;
+        height: 40px;
+        background: black;
+        position: absolute;
+        left: 55px;
+        top: 440px;
+}
+
+.r-base-top{
+        width: 86px;
+        height: 150px;
+        background: black;
+        position: absolute;
+        left: 0;
+        top: 20px;
+}
+
+.s-base-top{
+        width: 86px;
+        height: 100px;
+        background: black;
+        position: absolute;
+        left: 0;
+        top: 22px;
+
+}
+
+.s-round-second,
+.y-round-second{
+        width: 86px;
+        height: 44px;
+        background: black;
+        position: absolute;
+        left: 0px;
+        top: 122px;
+        border-radius: 15px;
+
+}
+
+.s-rectangle-vertical-top{
+        width: 15px;
+        height: 127px;
+        background: black;
+        position: absolute;
+        left: 0;
+        top: 15px;
+}
+
+.s-cutout-vertical-top{
+        width: 6px;
+        height: 90px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 42px;
+        top: 32px;
+        border-radius: 100px;
+
+}
+
+.s-cutout-horizontal-top{
+        width: 60px;
+        height: 6px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: 116px;
+        border-radius: 100px;
+
+}
+
+.s-base-bottom,
+.y-base-bottom{
+        width: 86px;
+        height: 293px;
+        background: black;
+        position: absolute;
+        left: 0;
+        top: 166px;
+
+}
+
+.s-rectangle-vertical-bottom{
+        width: 15px;
+        height: 127px;
+        background: black;
+        position: absolute;
+        left: 71px;
+        top: 141px;
+}
+
+.s-cutout-horizontal-bottom,
+.y-cutout-horizontal-bottom{
+        width: 51px;
+        height: 6px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: -3px;
+        top: 166px;
+        border-radius: 100px;
+
+}
+
+.s-cutout-vertical-bottom,
+.y-cutout-vertical-bottom{
+        width: 6px;
+        height: 268px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: 166px;
+        border-radius: 100px;
+
+}
+
+.t-bar{
+        width: 82px;
+        height: 38px;
+        background: black;
+        position: absolute;
+        left: -21px;
+        top: 0px;
+}
+
+.u-base{
+        width: 86px;
+        height: 449px;
+        background: black;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+}
+
+.u-cutout-vertical{
+        width: 5px;
+        height: 436px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: -2px;
+        border-radius: 100px 100px;
+
+}
+
+.v-cutout-vertical{
+        width: 5px;
+        height: 436px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 43px;
+        top: -2px;
+        border-radius: 100px 100px;
+
+}
+
+.w-bottom{
+        width: 5px;
+        height: 70px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 55px;
+        top: 412px;
+        border-radius: 100px;
+
+}
+
+.w-cutout-top-one{
+        width: 5px;
+        height: 320px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 36px;
+        top: -2px;
+        border-radius: 100px
+}
+
+.w-cutout-top-two{
+        width: 5px;
+        height: 320px;
+        background: var(--main-bg-color);
+        position: absolute;
+        left: 73px;
+        top: -2px;
+        border-radius: 100px
+}
+
+.y-rectangle-vertical-top{
+        width: 15px;
+        height: 127px;
+        background: black;
+        position: absolute;
+        left: 71px;
+        top: 42px;
+}
+
+.y-base-top{
+        width: 86px;
+        height: 136px;
+        background: black;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+}
+
+.z-bar-top{
+        width: 86px;
+        height: 38px;
+        background: black;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+}
+
+.z-bar-diagonal{
+        width: 40px;
+        height: 413px;
+        background: black;
+        position: absolute;
+        left: 23px;
+        top: 34px;
+        transform: rotate(-173.58deg);
+}
