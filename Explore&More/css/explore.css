@@ -1,0 +1,198 @@
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face{
+            font-family: 'Helvetica';
+            src: url("..explore&more/font/helvetica-neau.woff") format('woff');
+            font-style: normal;
+
+            font-family: 'Ringside';
+            src: url("..explore&more/font/Ringside-Bold.woff") format('woff');
+            font-weight: bold;
+
+            font-family: 'Ringside';
+            src: url("..explore&more/font/Ringside-Book.woff") format('woff');
+            font-weight: 350;
+
+            font-family: 'Ringside';
+            src: url("..explore&more/font/Ringside-Medium.woff") format('woff');
+            font-weight: 500;
+        }
+
+        h1{
+            font-family: Helvetica;
+            font-weight: normal;
+            font-size: 4rem;
+            height: 100%;
+
+        }
+
+        .exhibitions{
+           position: fixed;
+           top: 50%;
+           left: 50%;
+           margin-top: -50px;
+           margin-left: -100px;
+
+        }
+
+        .exhibition-header{
+           transform: rotate(-355deg);
+        }
+
+        .exhibition-sun{
+            position: absolute;
+            top: -40px;
+            left: 140px;
+
+            transform: scale(0.6);
+        }
+
+        .contents {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            height: 100vh;
+        }
+
+        .content {
+            height: 100vh;
+            border-left: 1px solid #000;
+            overflow-y: scroll;
+
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .content::-webkit-scrollbar {
+          display: none;
+        }
+
+        .content: last-child{
+            border-right: 1px solid #000;
+        }
+
+        .content-header{
+            padding: 1rem;
+        }
+
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 95%;
+        }
+
+        .responsive{
+            max-width: 100%;
+            height: auto;
+
+        }
+
+        ol,ul{
+            list-style: none;
+        }
+
+        #sidenav{
+            padding-top: 5rem;
+        }
+
+        #sidenav li{
+            padding: 0.25rem;
+        }
+
+        .ex-being-good-neighbours{
+            padding: 1rem;
+            height: auto; 
+            width: auto; 
+            max-width: 40%;
+            max-height: 40%;
+
+            position: relative;
+            top: -160px;
+            left: 50px;
+        }
+
+         .ex-building-buffalo{
+            height: auto; 
+            width: auto; 
+            max-width: 40%;
+            max-height: 40%;
+
+            position: relative;
+            top: -30px;
+            left: 300px;
+        }
+
+         .ex-farm-to-fork{
+            height: auto; 
+            width: auto; 
+            max-width: 40%;
+            max-height: 40%;
+
+            position: relative;
+            top: -30px;
+            left: 100px;
+        }
+
+        .ex-lighting-buffalo{
+            height: auto; 
+            width: auto; 
+            max-width: 40%;
+            max-height: 40%;
+
+            position: relative;
+            top: -30px;
+            left: 300px;
+        }
+
+        .ex-person-centred{
+            height: auto; 
+            width: auto; 
+            max-width: 50%;
+            max-height: 50%;
+
+            position: relative;
+            top: -30px;
+            left: 300px;
+        }
+
+        .ex-moving-water{
+            height: auto; 
+            width: auto; 
+            max-width: 40%;
+            max-height: 40%;
+
+            position: relative;
+            top: -30px;
+            left: 300px;
+        }
+
+         .playing-together{
+            height: auto; 
+            width: auto; 
+            max-width: 40%;
+            max-height: 40%;
+
+            position: relative;
+            top: -30px;
+            left: 300px;
+        }
+
+        .rooftop-terrace{
+            height: auto; 
+            width: auto; 
+            max-width: 60%;
+            max-height: 60%;
+
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+
+
+
+
