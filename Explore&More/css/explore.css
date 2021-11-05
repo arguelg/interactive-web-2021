@@ -33,7 +33,7 @@
         .exhibitions{
            position: fixed;
            top: 50%;
-           left: 50%;
+           left: 55%;
            margin-top: -50px;
            margin-left: -100px;
 
@@ -105,15 +105,14 @@
         }
 
         .ex-being-good-neighbours{
-            padding: 1rem;
             height: auto; 
             width: auto; 
             max-width: 40%;
             max-height: 40%;
 
             position: relative;
-            top: -160px;
-            left: 50px;
+            top: 0.5rem;
+            left: 1rem;
         }
 
          .ex-building-buffalo{
@@ -123,76 +122,75 @@
             max-height: 40%;
 
             position: relative;
-            top: -30px;
-            left: 300px;
+            top: 0.5rem;
+            left: 10rem;
         }
 
          .ex-farm-to-fork{
             height: auto; 
             width: auto; 
-            max-width: 40%;
-            max-height: 40%;
+            max-width: 35%;
+            max-height: 35%;
 
             position: relative;
-            top: -30px;
-            left: 100px;
+            top: 7rem;
+            left: 5rem;
         }
 
         .ex-lighting-buffalo{
             height: auto; 
             width: auto; 
-            max-width: 40%;
-            max-height: 40%;
+            max-width: 55%;
+            max-height: 55%;
 
             position: relative;
-            top: -30px;
-            left: 300px;
+            top: -1rem;
+            left: 3rem;
         }
 
-        .ex-person-centred{
+        .ex-moving-water{
             height: auto; 
             width: auto; 
             max-width: 50%;
             max-height: 50%;
 
             position: relative;
-            top: -30px;
-            left: 300px;
+            top: 1rem;
+            left: -1rem;
         }
 
-        .ex-moving-water{
+        .ex-person-centred{
             height: auto; 
             width: auto; 
-            max-width: 40%;
-            max-height: 40%;
+            max-width: 55%;
+            max-height: 55%;
 
             position: relative;
-            top: -30px;
-            left: 300px;
+            top: -1rem;
+            left: 5rem;
         }
 
-         .playing-together{
+        .ex-rooftop-terrace{
             height: auto; 
             width: auto; 
-            max-width: 40%;
-            max-height: 40%;
+            max-width: 55%;
+            max-height: 55%;
 
             position: relative;
-            top: -30px;
-            left: 300px;
+            top: -20rem;
+            left: 2rem;
         }
 
-        .rooftop-terrace{
+
+        .ex-playing-together{
             height: auto; 
             width: auto; 
-            max-width: 60%;
-            max-height: 60%;
+            max-width: 45%;
+            max-height: 45%;
 
             position: relative;
-            top: 50px;
-            left: 50px;
+            top: -43rem;
+            left: 10rem;
         }
-
-
 
 
