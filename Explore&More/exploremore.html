@@ -13,7 +13,7 @@
 
 <div class="contents">
 
-    <div class="content-header">
+<div class="content-header">
             <a href="default.asp">
             <img src="svgs/logo.svg" alt="logo" class="center" class="responsive">
             </a>
@@ -24,41 +24,82 @@
             <li><a href="events.html">Events</a></li>
             <li><a href="support.html">Support</a></li>
         </ul>
-        <div class="hours"></div>
-        <div class="admission"></div>
+        <div class="hours"><h1>Hours</h1></div>
+        <div class="sidebar-grid">
+            <h3 class="days">Monday-Thursday</h3>
+            <h3 class="days">Friday (Members Only)</h3>
+            <h4 class="time-info">10 am - 4 pm</h4>
+            <h4 class="time-info">10 am - 4 pm</h4>
+            <h3 class="days">Saturday</h3>
+            <h3></h3>
+            <h4 class="time-info">10 am - 4 pm</h4>
+        </div>
+    <div class="admission"><h1>Admission</h1></div>
+    <h4 class="tickets-info">Advanced tickets are required.</h4>
+    <a class="link" href="#"><h2>VIEW ALL</h2></a> <!--For some reason, it's spacing out weirdly-->
+    <div class="sidebar-grid">
+        <h3 class="days">Adults & Children (Ages 1 & Up)</h3>
+        <h3 class="days">Children under Age 1 & Members</h3>
+        <h4 class="time-info">$11</h4>
+        <h4 class="time-info">Free</h4>
+
+
     </div>
+
+</div>
 
     <div class="content">
         <div class="exhibitions">
             <h1 class="exhibition-header">Exhibitions</h1>
             <img src="svgs/sun.svg" alt="logo" class="exhibition-sun">
-
         </div>
-        <img src="svgs/beinggoodneighbours.svg" id="ex-being-good-neighbours" class="ex-being-good-neighbours">
-        <img src="svgs/buildingbuffalo.svg" id="ex-building-buffalo" class="ex-building-buffalo">
-        <img src="svgs/farmtofork.svg" id="ex-farm-to-fork" class="ex-farm-to-fork">
-        <img src="svgs/lightingbuffalo.svg" id="ex-lighting-buffalo" class="ex-lighting-buffalo">
-        <img src="svgs/movingwater.svg" id="ex-moving-water" class="ex-moving-water">
-        <img src="svgs/personcentred.svg" id="ex-person-centred" class="ex-person-centred">
-        <img src="svgs/playingtogether.svg" id="ex-playing-together" class="ex-playing-together">
-        <img src="svgs/rooftopterrace.svg" id="ex-rooftop-terrace" class="ex-rooftop-terrace">
 
-        <script>
+        <a class="link" href="#"><h2>VIEW ALL</h2></a>
+        
+        <div class="blob-container">
+           <div class="blobs">
+                <a href="explore&more/"><img src="svgs/beinggoodneighbours.svg" id="ex-being-good-neighbours" class="ex-blob">
+                <img src="svgs/buildingbuffalo.svg" id="ex-building-buffalo" class="ex-blob">
+                <img src="svgs/farmtofork.svg" id="ex-farm-to-fork" class="ex-blob">
+                <img src="svgs/lightingbuffalo.svg" id="ex-lighting-buffalo" class="ex-blob">
+                <img src="svgs/movingwater.svg" id="ex-moving-water" class="ex-blob">
+                <img src="svgs/personcentred.svg" id="ex-person-centred" class="ex-blob">
+                <img src="svgs/playingtogether.svg" id="ex-playing-together" class="ex-blob">
+                <img src="svgs/rooftopterrace.svg" id="ex-rooftop-terrace" class="ex-blob">
+                
+                <script>
 
-            $( function() {
-            $( "#ex-being-good-neighbours" ).draggable({ containment: "#containment-wrapper", scroll: false });
-            $( "#ex-building-buffalo" ).draggable({ containment: "#containment-wrapper", scroll: false });
-            $( "#ex-farm-to-fork" ).draggable({ containment: "#containment-wrapper", scroll: false });
-            $( "#ex-lighting-buffalo" ).draggable({ containment: "#containment-wrapper", scroll: false });
-            $( "#ex-moving-water" ).draggable({ containment: "#containment-wrapper", scroll: false });
-            $( "#ex-person-centred" ).draggable({ containment: "#containment-wrapper", scroll: false });
-            $( "#ex-playing-together" ).draggable({ containment: "#containment-wrapper", scroll: false });
-            $( "#ex-rooftop-terrace" ).draggable({ containment: "#containment-wrapper", scroll: false });
-            } );
+                $( function() {
+                    $( "#ex-being-good-neighbours" ).draggable();
+                    $( "#ex-building-buffalo" ).draggable();
+                    $( "#ex-farm-to-fork" ).draggable();
+                    $( "#ex-lighting-buffalo" ).draggable();
+                    $( "#ex-moving-water" ).draggable();
+                    $( "#ex-person-centred" ).draggable();
+                    $( "#ex-playing-together" ).draggable();
+                    $( "#ex-rooftop-terrace" ).draggable();
+                } );
 
-        </script>
+                </script>
 
+    <!-- DRAGGABLE WITH CONTAINMENT WRAPPER
 
+              $( function() {
+                $( "#ex-being-good-neighbours" ).draggable({ containment: "#containment-wrapper", scroll: false });
+                $( "#ex-building-buffalo" ).draggable({ containment: "#containment-wrapper", scroll: false });
+                $( "#ex-farm-to-fork" ).draggable({ containment: "#containment-wrapper", scroll: false });
+                $( "#ex-lighting-buffalo" ).draggable({ containment: "#containment-wrapper", scroll: false });
+                $( "#ex-moving-water" ).draggable({ containment: "#containment-wrapper", scroll: false });
+                $( "#ex-person-centred" ).draggable({ containment: "#containment-wrapper", scroll: false });
+                $( "#ex-playing-together" ).draggable({ containment: "#containment-wrapper", scroll: false });
+                $( "#ex-rooftop-terrace" ).draggable({ containment: "#containment-wrapper", scroll: false });
+                $( "#car-wash" ).draggable({ containment: "#containment-wrapper", scroll: false });
+                } );
+    -->
+
+            </div>
+        </div>
+        </div>
     </div>
 </div>
 

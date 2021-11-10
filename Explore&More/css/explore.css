@@ -4,9 +4,10 @@
             box-sizing: border-box;
         }
 
+
         @font-face{
             font-family: 'Helvetica';
-            src: url("..explore&more/font/helvetica-neau.woff") format('woff');
+            src: url("..explore&more/font/HelveticaNeueCyr-Roman.woff") format('woff');
             font-style: normal;
 
             font-family: 'Ringside';
@@ -25,30 +26,161 @@
         h1{
             font-family: Helvetica;
             font-weight: normal;
-            font-size: 4rem;
+            font-size: 3.2em;
             height: 100%;
 
         }
 
-        .exhibitions{
-           position: fixed;
-           top: 50%;
-           left: 55%;
-           margin-top: -50px;
-           margin-left: -100px;
 
+        h2{
+
+            font-family: Ringside;
+            font-weight: 500;
+            font-size: 1rem;
+            height: 100%;
+            
         }
 
+
+        h3{
+
+            font-family: Ringside;
+            font-weight: 350;
+            font-size: 0.7rem;
+            height: 100%;
+            
+        }
+
+       h4{
+
+            font-family: Ringside;
+            font-weight: 500;
+            font-size: 1.2rem;
+            height: 100%;
+            
+        }
+
+        body{
+            font-family: Ringside;
+            font-weight: 350;
+            font-size: 1rem;
+            height: 100%;
+            background-color: rgb(255, 157, 172);
+            
+        }
+
+       /* button{
+            background: transparent;
+            box-shadow: 0px 0px 0px transparent;
+            border: 0px solid transparent;
+            text-shadow: 0px 0px 0px transparent;
+        }
+
+        button:hover{
+            cursor: pointer;
+            text-decoration: underline;
+            text-decoration-thickness: 10% ;
+        }
+
+         .view-all{
+            padding-left: 2rem;
+            padding-top: 1.5rem;
+        }       
+
+
+
+
+
+        /*.exhibitions{
+            position: relative;
+            margin: auto;
+            padding-left: 3rem;
+            padding-top: 2rem;
+            transform-origin: top left;
+            transform: rotateZ(7deg);
+        }*/
+
+        .exhibitions-neighbour,
+        .exhibitions{
+            position: relative; /* Remember to put position: relative and position: absolute*/
+            margin: auto;
+            padding-left: 4rem;
+            padding-top: 2rem;
+
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-name: rotate;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotateZ(0deg);
+            }
+        to {
+            transform: rotateZ(5deg);
+            transform-origin: top left;
+            }
+        }
+
+        /* FOR HOVERING 
+
+        .exhibitions-neighbour:hover{
+            transform-origin: 50px 50px;
+            transform: rotateZ(8deg);
+            transition: transform 0.5s
+        }
+
+        */
+
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
+        .link {
+          display: inline-block;
+          position: relative;
+          color: black;
+          top: 1rem;
+          left: 3.8rem;
+        }
+
+        .link:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: rgb(252, 238, 33);
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+        }
+
+        .link:hover:after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+          cursor: pointer;
+        }        
+
         .exhibition-header{
-           transform: rotate(-355deg);
+            text-align: left;
         }
 
         .exhibition-sun{
             position: absolute;
-            top: -40px;
-            left: 140px;
+            top: -1.4rem;
+            left: 10rem;
+            transform: scale(0.5);
+        }
 
-            transform: scale(0.6);
+       .neighbour-sun{
+            position: absolute;
+            top: -1.4rem;
+            left: 13rem;
+            transform: scale(0.5);
         }
 
         .contents {
@@ -58,25 +190,47 @@
         }
 
         .content {
+            position: relative;
             height: 100vh;
             border-left: 1px solid #000;
             overflow-y: scroll;
+            margin: 0;
+            padding: 0;
 
             -ms-overflow-style: none;  /* IE and Edge */
             scrollbar-width: none;  /* Firefox */
         }
+
 
         /* Hide scrollbar for Chrome, Safari and Opera */
         .content::-webkit-scrollbar {
           display: none;
         }
 
-        .content: last-child{
-            border-right: 1px solid #000;
-        }
-
         .content-header{
             padding: 1rem;
+            border-left: 1px solid #000;
+            overflow-y: scroll;
+
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+
+        }
+
+       .content-header::-webkit-scrollbar {
+          display: none;
+        }
+
+        .sidebar-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 2rem;
+        }
+
+        .sidebar-grid-admission{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 2rem;
         }
 
         .center{
@@ -104,93 +258,122 @@
             padding: 0.25rem;
         }
 
-        .ex-being-good-neighbours{
-            height: auto; 
-            width: auto; 
-            max-width: 40%;
-            max-height: 40%;
+        .days{
+           padding-bottom: 0.3rem;
+           padding-left: 1rem;
 
-            position: relative;
-            top: 0.5rem;
-            left: 1rem;
         }
 
-         .ex-building-buffalo{
-            height: auto; 
-            width: auto; 
-            max-width: 40%;
-            max-height: 40%;
-
-            position: relative;
-            top: 0.5rem;
-            left: 10rem;
+        .time-info{
+            padding-bottom: 0.7rem;
+            padding-left: 1rem;
         }
 
-         .ex-farm-to-fork{
-            height: auto; 
-            width: auto; 
-            max-width: 35%;
-            max-height: 35%;
-
-            position: relative;
-            top: 7rem;
-            left: 5rem;
+        .tickets-info{
+            padding-left: 1rem;
         }
 
-        .ex-lighting-buffalo{
-            height: auto; 
-            width: auto; 
-            max-width: 55%;
-            max-height: 55%;
-
-            position: relative;
-            top: -1rem;
-            left: 3rem;
+        .hours{
+            transform-origin: top left;
+            transform: rotateZ(8deg);
+            padding-top: 1rem;
+            padding-left: 1rem;
         }
 
-        .ex-moving-water{
-            height: auto; 
-            width: auto; 
-            max-width: 50%;
-            max-height: 50%;
-
-            position: relative;
-            top: 1rem;
-            left: -1rem;
+       .admission{
+            transform-origin: top left;
+            transform: rotateZ(-8deg);
+            padding-top: 2rem;
+            padding-right: 1rem;
+            text-align: right;
         }
 
-        .ex-person-centred{
-            height: auto; 
-            width: auto; 
-            max-width: 55%;
-            max-height: 55%;
+/* These are the illustration blobs */
 
+        .blobs{
             position: relative;
-            top: -1rem;
-            left: 5rem;
+            height: auto;
         }
 
-        .ex-rooftop-terrace{
-            height: auto; 
-            width: auto; 
-            max-width: 55%;
-            max-height: 55%;
+        #ex-being-good-neighbours{
+            width: 30%;
 
-            position: relative;
-            top: -20rem;
-            left: 2rem;
+            left: 570px;
+            top: 179px;
+            position: absolute;
+        }
+
+         #ex-building-buffalo{
+            width: 28%;
+
+            top: -15px;
+            left: 272px;
+            position: absolute;
+        }
+
+         #ex-farm-to-fork{
+            width: 23%;
+
+            left: 269px;
+            top: 148px;
+            position: absolute;
+        }
+
+        #ex-lighting-buffalo{
+            width: 18%;
+
+            left: 107px;
+            top: 151px;
+            position: absolute;
+        }
+
+        #ex-moving-water{
+            width: 28%;
+
+            left: 121px;
+            top: -11px;
+            position: absolute;
+        }
+
+        #ex-person-centred{
+            width: 26%;
+
+            left: 601px;
+            top: -24px;
+            position: absolute;
+        }
+
+        #ex-rooftop-terrace{
+            width: 18%;
+
+            left: 476px;
+            top: 22px;
+            position: absolute;
         }
 
 
-        .ex-playing-together{
-            height: auto; 
-            width: auto; 
-            max-width: 45%;
-            max-height: 45%;
+        #ex-playing-together{
+            width: 38%;
 
-            position: relative;
-            top: -43rem;
-            left: 10rem;
+            left: 239px;
+            top: 272px;
         }
+
+        .body-neighbours{
+            margin-top: 1rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
+            padding: 3rem;
+
+        }
+
+       #neighbours{
+        width: 50%;
+        padding: 2rem;
+
+        float: right;
+        position: relative;
+
+       } 
 
 
