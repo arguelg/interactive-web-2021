@@ -1,0 +1,23 @@
+.exhibit-img{
+	display: none;
+	position: fixed;
+	width: 38%;
+	margin-top: 2rem;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-25%,-50%);
+}
+
+.exhibit-one:hover + .exhibit-img,
+.exhibit-two:hover + .exhibit-img,
+.exhibit-three:hover + .exhibit-img,
+.exhibit-four:hover + .exhibit-img,
+.exhibit-five:hover + .exhibit-img,
+.exhibit-six:hover + .exhibit-img,
+.exhibit-seven:hover + .exhibit-img,
+.exhibit-eight:hover + .exhibit-img,
+.exhibit-nine:hover + .exhibit-img{
+	display: block;
+	transition: 2s;
+}
