@@ -33,7 +33,6 @@
             font-family: Helvetica;
             font-weight: normal;
             font-size: 3em;
-            height: 100%;
             display: inline-block;
 
         }
@@ -114,10 +113,6 @@
             padding-top: 1.5rem;
         }       
 
-
-
-
-
         /*.exhibitions{
             position: relative;
             margin: auto;
@@ -171,6 +166,9 @@
           color: black;
           top: 1rem;
           left: 3.8rem;
+
+          z-index: 1;
+
         }
 
         .link:after {
@@ -249,7 +247,6 @@
             border-left: 1px solid #000;
             overflow-y: scroll;
             margin: 0;
-            padding-bottom: 3rem;
 
             -ms-overflow-style: none;  /* IE and Edge */
             scrollbar-width: none;  /* Firefox */
@@ -279,6 +276,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             padding-top: 2rem;
+            padding-bottom: 2rem;
         }
 
         .sidebar-grid-admission{
@@ -288,15 +286,27 @@
         }
 
         .center{
-            display: block;
             margin-left: auto;
             margin-right: auto;
             max-width: 85%;
+            display: block;
         }
 
         .responsive{
             max-width: 100%;
             height: auto;
+
+        }
+
+        .mobile-logo{
+            margin: auto;
+            width: 55%;
+            display: none;
+        }
+            .mobile-responsive{
+            max-width: 100%;
+            height: auto;
+            display: none;
 
         }
 
@@ -308,10 +318,9 @@
             position: relative;
             left: 0;
             top: 0;
-            height: 100%;
-            width: 250px;
-            padding-top: 2rem;
-            padding-left: 1rem;
+            width: 200px;
+            padding-top: 3rem;
+            padding-bottom: 2rem;
         }
 
         .dropdown li {
@@ -382,7 +391,7 @@
             transform-origin: top left;
             transform: rotateZ(6deg);
             padding-top: 1rem;
-            padding-left: 1rem;
+            padding-left: 1.2rem;
 
         }
 
@@ -390,7 +399,7 @@
             transform-origin: top left;
             transform: rotateZ(-6deg);
             padding-top: 2rem;
-            padding-right: 1rem;
+            padding-left: 0.35rem;
             text-align: left;
             padding-bottom: 1rem;
         }
@@ -419,8 +428,6 @@
             position: absolute;
             top: 0;
             left: 0;
-
-            z-index: -1;
 
         }
 
@@ -498,15 +505,6 @@
             position: absolute;
         }
 
-        .body-neighbours{
-            margin-top: 1rem;
-            padding-top: 2rem;
-            padding-left: 4rem;
-            padding-right: 4rem;
-            padding-bottom: 2rem;
-
-        }
-
        #neighbours{
             width: 50%;
             padding: 2rem;
@@ -516,11 +514,38 @@
 
        } 
 
-/* ALL EXHIBITS PAGE */
+       .about-us-mobile{
+        padding-top: 15rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        display: none;
+       }
+
+       .body-welcome{
+        max-width: 800px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: none;
+       }
+
+       .welcome-header{
+        display: none;
+       }
+
+/* SECOND WEBPAGE - ALL EXHIBITS PAGE */
+
+    .neighbours-text{
+            margin-top: 1rem;
+            padding-top: 2rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
+            padding-bottom: 2rem;
+        }
 
         .exhibit-names{
             margin-right: 1rem;
             padding-left: 4rem;
+            padding-bottom: 3rem;
 
             max-width: 100%;
             height: auto;
@@ -564,9 +589,9 @@
             position: fixed;
             width: 38%;
             margin-top: 2rem;
-            z-index: -1;
             top: 50%;
             left: 50%;
+            z-index: -1;
             transform: translate(-25%,-50%);
         }
 
@@ -583,3 +608,434 @@
             display: block;
             transition: 2s;
         }
+
+/* THIRD WEBPAGE - ALL EXHIBITS PAGE */
+
+.body-neighbours{
+    padding-top: 2rem;
+
+    }
+
+.first-column{
+    border-right: 1px solid #000;
+    padding: 2rem;
+
+    overflow-y: scroll;
+
+           -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .first-column::-webkit-scrollbar {
+          display: none;
+        }
+
+.neighbor-img{
+     width: 90%;
+     margin: 0 auto;
+}
+
+.neighbor-hover{
+    max-width: 1000px;
+}
+
+.neighbor-grid{
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            height: 90vh;
+        }
+
+.first-columnm,
+.second-column{
+    overflow-y: scroll;
+    padding: 2rem;
+
+           -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .second-column::-webkit-scrollbar {
+          display: none;
+        }
+}
+
+.neighbor-info{
+    max-width: 800px;
+}
+
+.connect-info{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    max-width: 500px;
+}
+
+.neighbor-img-one{
+    width: 80%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: auto;
+}
+
+.third-column{
+
+    height: 10vh;
+    border-top: 1px solid #000;
+
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.nys{
+    padding-bottom: 1rem;
+}
+
+.nys-header{
+    font-size: 3em;
+    padding-top: 1rem;
+
+}
+
+.nys-info{
+    padding-left: 1rem;
+    padding-top: 1rem;
+
+    max-width: 800px;
+}
+
+.exploring-header{
+    font-size: 2em;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+
+    float: right;
+
+}
+
+.exploring-header-one{
+    font-size: 2em;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+
+    float: left;
+
+}
+
+       .back-exhibit: hover{
+            transform-origin: 50px 50px;
+            transform: rotateZ(4deg);
+            transition: transform 0.5s;
+
+            cursor: pointer;
+        }
+       .nys-link {
+          display: inline-block;
+          position: relative;
+          color: black;
+          top: 0.5rem;
+        }
+
+        .nys-link:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: rgb(252, 238, 33);
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+        }
+
+        .nys-link:hover:after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+          cursor: pointer;
+        }              
+
+ 
+
+@media (min-width: 2100px){
+
+        body{
+            font-size: 2rem;
+
+        }
+
+        .home,
+        .visit,
+        .exhibit,
+        .groups,
+        .support{
+            font-size: 1.75rem;
+        }
+
+
+       h2{
+
+            font-family: Ringside;
+            font-weight: 500;
+            font-size: 1.8rem;
+            
+        }
+
+
+        h3{
+
+            font-family: Ringside;
+            font-weight: 350;
+            font-size: 1rem;
+            
+        }
+
+       h4{
+
+            font-family: Ringside;
+            font-weight: 500;
+            font-size: 2rem;
+            display: inline-block;
+            
+        }
+
+        .exhibition-sun{
+            top: 0.5rem;
+            left: 19.7rem;
+            transform: scale(0.8);
+        }
+
+        .exhibit-one,
+        .exhibit-two,
+        .exhibit-three,
+        .exhibit-four,
+        .exhibit-five,
+        .exhibit-six,
+        .exhibit-seven,
+        .exhibit-eight,
+        .exhibit-nine{
+            padding-top: 2.2rem;
+        }
+
+        .neighbours-text{
+            max-width: 1500px;
+        }
+
+        .sidebar-header{
+            font-size: 2.5em;
+            padding-left: 0.5rem;
+        }
+
+        .hours,
+        .tickets-info{
+            padding-left: 1rem;
+        }
+
+        .tickets-info{
+            padding-left: 1rem;
+            font-size: 2rem;
+        }
+
+        .admission{
+            padding-left: 0rem;
+        }
+
+        .link-sidebar{
+            left: 1rem;
+            font-size: 1rem;
+        }
+
+        .connect-info,
+        .neighbor-info{
+            max-width: 1000px;
+        }
+        .second-column,
+        .first-column{
+            padding: 5rem;
+        }
+
+        .nys-button{
+            font-size: 2.5em;
+            padding-top: 1rem;
+            padding-left: 3rem;
+        }
+
+        .text{
+            padding-left: 5rem;
+            padding-right: 5rem;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        .days
+        .time-info{
+            padding-left: 2rem;
+            font-size: ;
+        }
+
+        .dropdown{
+            width: 300px;
+        }
+
+
+
+}
+
+@media (max-width: 1200px) and (min-width: 901px){
+
+        .sidebar-header{
+            font-size: 2.5em;
+
+        }
+
+        .time-info{
+            font-size: 1.1em
+        }
+
+        .hours,
+        .tickets-info{
+            padding-left: 1rem;
+        }
+
+        .admission{
+            padding-left: 0.2rem
+        }
+
+        .link-sidebar{
+            left: 1rem;
+        }
+
+        .time-info,
+        .days{
+            padding-left: 2rem;
+        }
+
+}
+
+@media (max-width: 900px) and (min-width: 700px){
+        .body-welcome,
+        .welcome-header{
+            display: block;
+        }
+
+        .about-us-mobile{
+            display: block;
+            padding-top: 20rem;
+        }
+    }
+
+@media (max-width: 410px) and (min-width: 100px){
+
+        .body-welcome,
+        .welcome-header{
+            display: block;
+        }
+
+        .about-us-mobile{
+            display: block;
+            padding-top: 10rem;
+        }
+    }
+
+
+@media (max-width: 900px) and (min-width: 300px){
+
+        .about-us-mobile,
+        .body-welcome,
+        .welcome-header{
+            display: block;
+        }
+
+        .mobile-responsive,
+        .mobile-logo{
+            display: block;
+        }
+        
+        .dropdown{
+            left: -1.2rem;
+            top: 0;
+            width: 150px;
+            font-size: 0.85em;
+
+            padding-top: 1.5rem;
+        }
+
+        .groups,
+        .support,
+        .hours,
+        .admission,
+        .sidebar-grid,
+        .tickets-info,
+        .link-sidebar,
+        .days,
+        .time-info,
+        .center,
+        .responsive{
+            display: none;
+        }
+
+
+    .neighbor-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+      h2{
+
+            font-family: Ringside;
+            font-weight: 500;
+            font-size: 1rem;
+            
+        }
+
+
+        h3{
+
+            font-family: Ringside;
+            font-weight: 350;
+            font-size: 0.6rem;
+            
+        }
+
+       h4{
+
+            font-family: Ringside;
+            font-weight: 500;
+            font-size: 1rem;
+            display: inline-block;
+            
+        }
+
+        .exploring-header,
+        .exploring-header-one{
+            font-size: 30px;
+        }
+
+        .first-column,
+        .second-column{
+            overflow-y: visible;
+        }
+
+        .first-column{
+            padding-top: 6rem;
+            padding-bottom: 1rem;
+        }
+
+        .third-column{
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-top: 0px;
+            width: 100%;
+            height: 100%;
+        }
+
+}
+
+
+
+
+
