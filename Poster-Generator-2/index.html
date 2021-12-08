@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>OCADu Research Methods in Graphic Design – Poster Generator</title>
+	<link rel="stylesheet" href="../Poster-Generator-2/css/main.css">
+	<link rel="stylesheet" href="css/css%20typeface.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="grid">
+<div class="sidebar-grid">
+	<div class="sidebar-generator">
+		<h1 class="title">OCADu Research Methods in Graphic Design</h1>
+		<div class="button-grid">
+			<button class="color-button-orange">Orange</button>
+	        <button class="color-button-red">Red</button>
+	        <button class="color-button-green">Green</button>
+	        <button class="color-button-blue">Blue</button>
+        </div>
+
+  <!-- Maybe add background color but the colors might be too vibrant and would clash?
+       <h2 class="custom-info">Background Color:</h2>
+       <div class="button-grid">
+			<button class="bg-button-gray">Default</button>
+	        <button class="bg-button-red">Red</button>
+	        <button class="bg-button-green">Green</button>
+	        <button class="bg-button-blue">Blue</button>
+        </div> -->
+
+        <div class="m-k-d-c">
+        	<div class="type-custom-m">
+        		<button class="generator-button">M</button>
+        		<div id="top-right">
+        			<h2 class="custom-info">Widen</h2>
+					<input type="range" class="range-m range__width" value="5" min="5" max="38"/>
+					<h2 class="custom-info">Lengthen</h2>
+					<input type="range" class="range-m range__height" value="2" min="5" max="13"/>
+					<h2 class="custom-info">Skew</h2>
+					<input type="range" class="range-m range__skew" value="0" min="0" max="40"/>
+					<h2 class="custom-info">Move: X-Axis</h2>
+					<input type="range" class="range-m range__MoveX" value="0" min="-50" max="500"/>
+					<h2 class="custom-info">Move: Y-Axis</h2>
+
+					<input type="range" class="range-m range__MoveY" value="0" min="-20" max="780"/>
+				</div>
+        	</div>
+        	<div class="type-custom-d">
+        		<button class="generator-button">D</button>
+        		<div id="top-right">
+        			<h2 class="custom-info">Widen</h2>
+					<input type="range" class="range-d range__widthD" value="5" min="5" max="38"/>
+					<h2 class="custom-info">Lengthen</h2>
+					<input type="range" class="range-d range__heightD" value="2" min="5" max="13"/>
+					<h2 class="custom-info">Skew</h2>
+					<input type="range" class="range-d range__skewD" value="0" min="-40" max="40"/>
+					<h2 class="custom-info">Move: X-Axis</h2>
+					<input type="range" class="range-d range__MoveXD" value="0" min="-20" max="500"/>
+					<h2 class="custom-info">Move: Y-Axis</h2>
+					<input type="range" class="range-d range__MoveYD" value="0" min="-20" max="500"/>
+				</div>
+        	</div>
+         	<div class="type-custom-k">
+        		<button class="generator-button">K</button>
+        		<div id="top-right">
+        			<h2 class="custom-info">Widen</h2>
+					<input type="range" class="range-k range__widthK" value="5" min="5" max="38"/>
+					<h2 class="custom-info">Lengthen</h2>
+					<input type="range" class="range-k range__heightK" value="2" min="5" max="13"/>
+					<h2 class="custom-info">Skew</h2>
+					<input type="range" class="range-k range__skewK" value="0" min="-40" max="40"/>
+					<h2 class="custom-info">Move: X-Axis</h2>
+					<input type="range" class="range-k range__MoveXK" value="0" min="-20" max="500"/>
+					<h2 class="custom-info">Move: Y-Axis</h2>
+					<input type="range" class="range-k range__MoveYK" value="0" min="-20" max="500"/>
+				</div>
+        	</div>
+        	<div class="type-custom-c">
+        		<button class="generator-button">C</button>
+        		<div id="top-right">
+        			<h2 class="custom-info">Widen</h2>
+					<input type="range" class="range-c range__widthC" value="5" min="5" max="38"/>
+					<h2 class="custom-info">Lengthen</h2>
+					<input type="range" class="range-c range__heightC" value="2" min="5" max="13"/>
+					<h2 class="custom-info">Skew</h2>
+					<input type="range" class="range-c range__skewC" value="0" min="-40" max="40"/>
+					<h2 class="custom-info">Move: X-Axis</h2>
+					<input type="range" class="range-c range__MoveXC" value="0" min="-20" max="500"/>
+					<h2 class="custom-info">Move: Y-Axis</h2>
+					<input type="range" class="range-c range__MoveYC" value="0" min="-20" max="500"/>
+				</div>
+        	</div>
+        </div>
+        <button class="color-button-print">Print</button>
+    </div>
+</div>
+	<div class="main-poster" id="print">
+		<div></div>
+		<div class="poster-container" id="print">
+			<div class="lecture-name-grid"id="print">
+				<div class="lecture-names" id="print">&#10042 Mindy Seu</div>
+				<div class="lecture-names" id="print">&#10042 Daniel Aubert</div>
+				<div class="lecture-names" id="print">&#10042 Kelly Walters</div>
+				<div class="lecture-names" id="print">&#10042 Cem Eskinazi</div>
+			</div>
+			<div class="css-type-container" id="print">
+                <div class="letter letter-m" id="print">
+                    <div class="m-base"></div>
+                    <div class="m-top"></div>
+                    <div class="m-cutout-bottom-one"></div>
+                    <div class="m-cutout-bottom-two"></div>
+                    <div class="m-round-one"></div>
+                    <div class="m-round-two"></div>
+                </div>
+
+                <div class="letter letter-d" id="print">
+                    <div class="d-base"></div>
+                    <div class="d-rectangle-vertical"></div>
+                    <div class="d-cutout-vertical"></div>
+                    <div class="d-round-top"></div> 
+                    <div class="d-round-bottom"></div>          
+                </div>
+
+                <div class="letter letter-k" id="print">
+                    <div class="k-round-second"></div>
+                    <div class="k-round-third"></div>
+                    <div class="k-rectangle-vertical"></div>
+                    <div class="k-base-top"></div>
+                    <div class="k-base-bottom"></div>
+                    <div class="k-cutout-top"></div>
+                    <div class="k-cutout-bottom"></div>         
+                </div>
+
+                <div class="letter letter-c" id="print">  
+                    <div class="c-base"></div>
+                    <div class="c-cutout-vertical"></div>
+                    <div class="c-cutout-horizontal"></div>
+                    <div class="c-round-top"></div> 
+                    <div class="c-round-bottom"></div>              
+                </div>
+
+			</div>
+			<div class="lecture-info">
+				<h3 class="lecture-info-header" id="print">OCADu Research Methods in Graphic Design</h3>
+				<div class="lecture-info-grid" id="print">
+					<p class="lecture-copy" id="print">Mindy Seu is a designer and researcher. She holds an M.Des from Harvard’s Graduate School of Design and a B.A. in Design Media Arts from University of California, Los Angeles. As a fellow at the Harvard Law School’s Berkman Klein Center for the Internet & Society, she began the digital Cyberfeminism Index, which was later commissioned by Rhizome and presented at the New Museum. The printed publication Cyberfeminism Catalog is a 2021 recipient of the Graham Foundation Grant and will be published in Fall 2022. Seu has been a fellow at the Internet Archive, as well as a designer for 2×4’s Interactive Media team and the Museum of Modern Art’s in-house design studio. She has given lectures and workshops at Barbican Center, CalArts, Parsons, Pratt, RISD, Berkeley Art Museum, among others. Seu is currently an Assistant Professor at Rutgers Mason Gross School of the Arts and Critic at Yale School of Art.</p>
+					<p class="lecture-copy" id="print">Danielle Aubert is a graphic designer whose work examines materials, methods of production, machines and labor. She is the author of The Detroit Printing Co-op: The Politics of the Joy of Printing (2019: Inventory Press), Marking the Dispossessed (2015: Passenger Books), and 16 Months Worth of Drawings in Microsoft Excel (2006: Various Projects). She is co-author, with Lana Cavar and Natasha Chandani, of Thanks for the View, Mr. Mies (2012: Metropolis Books). She is an Associate Professor of Graphic Design at Wayne State University, in Detroit. From 2013-15 she was a Fellow in the Creative and Performing Art at the Lewis Center for the Arts at Princeton University.</p>
+					<p class="lecture-copy" id="print">Kelly Walters is an artist + designer + educator + researcher and the founder of Bright Polka Dot. Her practice includes teaching, writing and experimental publishing, with a particular focus on race and representation in design. Her ongoing design research interrogates the complexities of identity formation, systems of value and the shared vernacular in and around black visual culture. Kelly has worked as a designer for SFMOMA, the RISD Museum, Alexander Isley, Inc. Designers and Blue State. In 2015, she completed her MFA in Graphic Design from the Rhode Island School of Design. She was awarded an Association of Independent Colleges of Art & Design (AICAD) Teaching Fellowship in the Graphic Design program at California College of the Arts from 2015-2016. She has previously taught at the University of Bridgeport, Rhode Island School of Design, University of Connecticut and Central Saint Martins. She is currently an Assistant </p>
+					<p class="lecture-copy" id="print">Cem Esknazi is a graphic designer at self. Typeface designer at Occupant Fonts. Pursued his MFA in Graphic Design at the Rhode Island School of Design where he is also an adjunct faculty. Originally from Izmir, Turkey. His favorite color is yellow.</p>
+				</div>
+			</div>
+		</div>
+		<div></div>
+	</div>
+</div>
+	</div>
+	</div>
+</div>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="../Poster-Generator-2/printThis.js"></script>
+
+<script>
+
+    $(".color-button-green").click(function(){
+            $("body").addClass("green");
+            $("body").removeClass("blue red");
+    })
+
+    $(".color-button-blue").click(function(){
+            $("body").addClass("blue");
+            $("body").removeClass("green red");
+    })
+
+    $(".color-button-red").click(function(){
+            $("body").addClass("red");
+            $("body").removeClass("green blue");
+    })
+
+
+    $(".color-button-orange").click(function(){
+            $("body").removeClass("green blue red");
+    })
+
+    $(".range-m").change(function(){
+    	let rw = $(".range__width").val()/10;
+    	let rh = $(".range__height").val()/10;
+    	let rs = $(".range__skew").val();
+    	let rMX = $(".range__MoveX").val();
+    	let rMY = $(".range__MoveY").val();
+
+    	$(".letter-m").css({
+    		"transform":"scale("+rw+", "+rh+") skew("+rs+"deg) translate("+rMX+"px, "+rMY+"px)"
+    	})
+
+    })
+
+        $(".range-d").change(function(){
+    	let rwD = $(".range__widthD").val()/10;
+    	let rhD = $(".range__heightD").val()/10;
+    	let rsD = $(".range__skewD").val();
+    	let rMXD = $(".range__MoveXD").val();
+    	let rMYD = $(".range__MoveYD").val();
+
+    	$(".letter-d").css({
+    		"transform":"scale("+rwD+", "+rhD+") skew("+rsD+"deg) translate("+rMXD+"px, "+rMYD+"px)"
+    	})
+
+    })
+        $(".range-k").change(function(){
+    	let rwK = $(".range__widthK").val()/10;
+    	let rhK = $(".range__heightK").val()/10;
+    	let rsK = $(".range__skewK").val();
+    	let rMXK = $(".range__MoveXK").val();
+    	let rMYK = $(".range__MoveYK").val();
+
+    	$(".letter-k").css({
+    		"transform":"scale("+rwK+", "+rhK+") skew("+rsK+"deg) translate("+rMXK+"px, "+rMYK+"px)"
+    	})
+
+    })
+        $(".range-c").change(function(){
+    	let rwC = $(".range__widthC").val()/10;
+    	let rhC = $(".range__heightC").val()/10;
+    	let rsC = $(".range__skewC").val();
+    	let rMXC = $(".range__MoveXC").val();
+    	let rMYC = $(".range__MoveYC").val();
+
+    	$(".letter-c").css({
+    		"transform":"scale("+rwC+", "+rhC+") skew("+rsC+"deg) translate("+rMXC+"px, "+rMYC+"px)"
+    	})
+
+    })
+
+</script>
+
+</body>
+</html>
