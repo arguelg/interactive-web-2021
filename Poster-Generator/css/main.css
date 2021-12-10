@@ -7,9 +7,54 @@
 
         @font-face{
             font-family: 'Migra';
-            src: url("../Poster-Generator-2/fonts/Migra-Regular.woff") format('woff');
+            src: url("../fonts/Migra-Regular.woff") format('woff');
             font-style: normal;
 
+        }
+
+        #popup {
+            position: fixed;
+            width: 500px;
+            padding: 1em;
+            font-size: 2em;
+            background: rgb(206, 199, 192);
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            line-height: 1.4em;
+
+            display: none;
+
+
+        }
+
+        #actuallyPrint:hover,
+        #Close:hover{
+            background: black;
+            color: rgb(206, 199, 192);
+        }
+
+        #popup__background{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.75);
+
+            display: none;
+            pointer-events: none;
+
+        }
+
+        #actuallyPrint{
+            padding-right: 12px;
+            padding-left: 12px;
+        }
+
+        #Close{
+            padding-right: 12px;
+            padding-left: 12px;
+            float: right;
         }
 
        /* rgb(255, 125, 21) */
@@ -42,7 +87,7 @@
         h1{
             font-family: Migra;
             font-weight: normal;
-            font-size: 21px;
+            font-size: 2rem;
         }
 
         h2{
@@ -56,7 +101,7 @@
         h3{
             font-family: Migra;
             font-weight: normal;
-            font-size: 1.4rem;
+            font-size: 4.6rem;
         }
 
        button {
@@ -126,6 +171,7 @@
         }
 
         .sidebar-grid{
+            border-right: 1px solid;
             overflow-y: scroll;
             height: 100vh;
             -ms-overflow-style: none;  /* IE and Edge */
@@ -138,7 +184,6 @@
         }
 
         .sidebar-generator{
-            border-right: 1px solid;
             grid-template-columns: 1fr 1fr;
             padding: 1rem;
         }
@@ -149,12 +194,6 @@
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
 
-        }
-
-        .main-poster {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            height: 100vh;
         }
 
         .m-k-d-c{
@@ -238,6 +277,8 @@
             display: flex;
             align-content: center;
             justify-content: center;
+            position: relative;
+
 
             overflow-y: scroll;
             -ms-overflow-style: none;  /* IE and Edge */
@@ -252,17 +293,25 @@
         .poster-container{
             /* box shadow feature taken from W3 Schools: https://www.w3schools.com/css/css3_shadows_box.asp*/
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            
-            position: relative;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
 
             z-index: -2;
+
+            width: 11in;
+            height: 17in;
+
+            transform-origin: 0 0;
+            transform: scale(0.35) translate(-50%, -50%);
+
+            overflow: hidden;
 
         }
 
         .css-type-container{
-            padding: 1rem;
+            padding: 3rem;
         }
 
         .poster-container-red{
@@ -283,10 +332,12 @@
         .lecture-name-grid{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 1rem;
         }
 
         .lecture-names{
-            padding: 1rem;
+            padding: 2rem;
+            font-size: 18pt;
         }
 
         .lecture-info{
@@ -297,25 +348,39 @@
 
         .lecture-info-header{
             display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 3fr 1fr;
 
-            padding-left: 1rem;
+            padding-left: 2rem;
         }
 
         .lecture-info-grid{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-gap: 5px;
+            grid-gap: 1rem;
 
-            padding: 1rem;
+            padding: 2rem;
         }
 
         .lecture-copy{
-            font-size: 0.28rem;
-            line-height: 6px;
-
+            font-size: 10.5pt;
+            line-height: 12.5pt;
 
         }
+
+        /*.circle{
+            width: 850px;
+            height: 300px;
+            border: 2px solid #000;
+            transform: rotate(-58deg);
+            border-radius: 400px / 150px;
+
+            margin: auto;
+            position: relative;
+            top: 50px;
+            left: px;
+
+            z-index:;
+        }*/
 
         .letter-m,
         .letter-k,
@@ -324,11 +389,10 @@
             z-index: -1;
             transition: 0.2s;
 
-            transform-origin: center;
+            transform-origin: 0 0;
             transform: scaleX(2.0) scaleY(2.0);
         }
-
-        /*Customize the range slider. Taken from W3 Schools:  
+        /*Customizing the range slider was taken from W3 Schools:  
         https://www.w3schools.com/howto/howto_js_rangeslider.asp */
 
         .range-m,
@@ -369,5 +433,39 @@
           cursor: pointer;
         }
 
+@media (min-width: 2000px){
+    .poster-container{
+        transform: scale(0.8) translate(-50%, -50%);
+    }
+}
+
+@media (min-width: 1400px){
+    .poster-container{
+        transform: scale(0.5) translate(-50%, -50%);
+    }
+}
+
+@media print {
+
+    .sidebar-grid{
+        display: none;
+    }
+
+    .poster-container,
+    .main-poster{
+        transform: scale(1);
+        position: static;
+        margin: 0;
+        padding: 0;
+
+        -webkit-print-color-adjust:exact;
+
+
+    }
+
+    .grid{
+        display: block;
+    }
+}
 
 
