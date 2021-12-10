@@ -40,9 +40,9 @@
 					<h2 class="custom-info">Skew</h2>
 					<input type="range" class="range-m range__skew" value="0" min="0" max="40"/>
 					<h2 class="custom-info">Move: X-Axis</h2>
-					<input type="range" class="range-m range__MoveX" value="0" min="-500" max="500"/>
+					<input type="range" class="range-m range__MoveX" value="0" min="-1000" max="1000"/>
 					<h2 class="custom-info">Move: Y-Axis</h2>
-					<input type="range" class="range-m range__MoveY" value="0" min="-500" max="780"/>
+					<input type="range" class="range-m range__MoveY" value="0" min="-1000" max="1000"/>
 				</div>
         	</div>
         	<div class="type-custom-d">
@@ -55,9 +55,9 @@
 					<h2 class="custom-info">Skew</h2>
 					<input type="range" class="range-d range__skewD" value="0" min="0" max="40"/>
 					<h2 class="custom-info">Move: X-Axis</h2>
-					<input type="range" class="range-d range__MoveXD" value="0" min="-500" max="500"/>
+					<input type="range" class="range-d range__MoveXD" value="0" min="-1000" max="1000"/>
 					<h2 class="custom-info">Move: Y-Axis</h2>
-					<input type="range" class="range-d range__MoveYD" value="0" min="-500" max="500"/>
+					<input type="range" class="range-d range__MoveYD" value="0" min="-1000" max="1000"/>
 				</div>
         	</div>
          	<div class="type-custom-k">
@@ -70,9 +70,9 @@
 					<h2 class="custom-info">Skew</h2>
 					<input type="range" class="range-k range__skewK" value="0" min="-40" max="40"/>
 					<h2 class="custom-info">Move: X-Axis</h2>
-					<input type="range" class="range-k range__MoveXK" value="0" min="-500" max="500"/>
+					<input type="range" class="range-k range__MoveXK" value="0" min="-1000" max="1000"/>
 					<h2 class="custom-info">Move: Y-Axis</h2>
-					<input type="range" class="range-k range__MoveYK" value="0" min="-500" max="500"/>
+					<input type="range" class="range-k range__MoveYK" value="0" min="-1000" max="1000"/>
 				</div>
         	</div>
         	<div class="type-custom-c">
@@ -85,9 +85,9 @@
 					<h2 class="custom-info">Skew</h2>
 					<input type="range" class="range-c range__skewC" value="0" min="-40" max="40"/>
 					<h2 class="custom-info">Move: X-Axis</h2>
-					<input type="range" class="range-c range__MoveXC" value="0" min="-500" max="500"/>
+					<input type="range" class="range-c range__MoveXC" value="0" min="-1000" max="1000"/>
 					<h2 class="custom-info">Move: Y-Axis</h2>
-					<input type="range" class="range-c range__MoveYC" value="0" min="500" max="500"/>
+					<input type="range" class="range-c range__MoveYC" value="0" min="-1000" max="1000"/>
 				</div>
         	</div>
         </div>
@@ -158,10 +158,6 @@
 	</div>
 </div>
 </div>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript" src="../Poster-Generator-2/printThis.js"></script>
 
 <div id="popup__background"></div>
 <div id="popup">
@@ -177,6 +173,11 @@
 	<button id="actuallyPrint">Print</button>
 </div>
 
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="../Poster-Generator-2/printThis.js"></script>
+
 <script>
 	$(".color-button-print").click(function(){
 		$("#popup, #popup__background").fadeToggle();
@@ -187,10 +188,6 @@
            $("#popup, #popup__background").fadeOut();
        }
    });
-
-	$("#Close").click(function(){
-           $("#popup, #popup__background").fadeOut();
-   })
 
 	$("#actuallyPrint").click(function(){
 		window.print();

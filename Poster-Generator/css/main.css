@@ -447,8 +447,10 @@
 
 @media print {
 
-    .sidebar-grid{
-        display: none;
+    .sidebar-grid,
+    #popup,
+    #popup__background{
+        display: none !important;
     }
 
     .poster-container,
