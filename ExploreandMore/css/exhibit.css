@@ -708,8 +708,8 @@
 
 .exploring-header{
     font-size: 2em;
-    padding-top: 0.5rem;
-    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
 
     float: right;
 
@@ -717,8 +717,8 @@
 
 .exploring-header-one{
     font-size: 2em;
-    padding-top: 0.5rem;
-    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
 
     float: left;
 
